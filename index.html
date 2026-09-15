@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE PLAYER - Tecnología a tu alcance</title>
-    <!-- Tailwind CSS (Estilos listos sin instalar nada) -->
+    <title>ONE PLAYER - Servicio Técnico & Entretenimiento</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome (Iconos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,11 +30,11 @@
     <!-- NAVEGACIÓN -->
     <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <i class="fa-solid fa-gamepad text-red-500 text-2xl"></i>
-                <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
-                    ONE PLAYER
-                </span>
+            
+            <!-- LOGO APILADO SIN ÍCONO -->
+            <a href="#" class="flex flex-col tracking-tighter uppercase font-black leading-none group">
+                <span class="text-xs text-red-500 tracking-widest group-hover:text-red-400 transition">ONE</span>
+                <span class="text-xl bg-gradient-to-r from-red-500 via-rose-500 to-indigo-500 bg-clip-text text-transparent">PLAYER</span>
             </a>
             
             <!-- Menú Escritorio -->
@@ -55,24 +55,26 @@
     </nav>
 
     <!-- HERO SECTION (PORTADA) -->
-    <section class="pt-32 pb-20 px-4 text-center relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+    <section class="pt-36 pb-20 px-4 text-center relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
         <div class="max-w-4xl mx-auto">
             <span class="inline-block bg-red-500/10 text-red-400 border border-red-500/20 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-4">
                 Servicio Técnico & Tecnología
             </span>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-                ONE PLAYER <br/>
-                <span class="text-slate-400 text-2xl md:text-4xl font-normal">Tecnología a tu alcance</span>
+            
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                ONE PLAYER
             </h1>
-            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-                Reparación especializada de celulares, los mejores accesorios para tu smartphone y el mejor entretenimiento TV para toda la familia.
+            
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Reparación especializada de celulares, accesorios para tu smartphone y el mejor entretenimiento TV para toda la familia.
             </p>
+            
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#reparaciones" class="bg-red-600 hover:bg-red-500 text-white font-bold px-8 py-3 rounded-xl transition shadow-lg shadow-red-600/30">
-                    <i class="fa-solid fa-wrench mr-2"></i> Reparar mi Celular
+                <a href="https://wa.me/5490000000000?text=Hola,%20quiero%20consultar%20por%20una%20reparacion" target="_blank" class="bg-red-600 hover:bg-red-500 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-red-600/30 flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Consultar Servicio Técnico
                 </a>
-                <a href="#entretenimiento" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold px-8 py-3 rounded-xl border border-slate-700 transition">
-                    <i class="fa-solid fa-tv mr-2"></i> TV Entretenimiento
+                <a href="#entretenimiento" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold px-8 py-3.5 rounded-xl border border-slate-700 transition flex items-center justify-center">
+                    <i class="fa-solid fa-tv mr-2"></i> Ver Planes de TV
                 </a>
             </div>
         </div>
@@ -87,7 +89,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Tarjeta 1 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-red-500/50 transition">
                     <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-xl flex items-center justify-center text-2xl mb-4">
                         <i class="fa-solid fa-mobile-screen"></i>
@@ -96,7 +97,6 @@
                     <p class="text-slate-400 text-sm">Cambiamos pantallas rotas o táctiles con repuestos de alta calidad y garantía en la instalación.</p>
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-red-500/50 transition">
                     <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-xl flex items-center justify-center text-2xl mb-4">
                         <i class="fa-solid fa-battery-half"></i>
@@ -105,7 +105,6 @@
                     <p class="text-slate-400 text-sm">Remplazo de baterías agotadas y reparación de pines de carga dañados para que tu equipo rinda al máximo.</p>
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-red-500/50 transition">
                     <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-xl flex items-center justify-center text-2xl mb-4">
                         <i class="fa-solid fa-microchip"></i>
@@ -130,7 +129,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-extrabold mb-2">Accesorios Destacados</h2>
-                <p class="text-slate-400">Todo lo que tu celular necesita para rendir y lucir al máximo</p>
+                <p class="text-slate-400">Protección, carga y audio de excelente rendimiento</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -164,7 +163,7 @@
             <i class="fa-solid fa-tv text-5xl text-red-500 mb-4"></i>
             <h2 class="text-3xl font-extrabold mb-4">Entretenimiento TV Familiar</h2>
             <p class="text-slate-300 text-lg mb-6">
-                Disfruta de la mejor programación, deportes en vivo, películas y series para toda la familia. Configuración para TV Box, Smart TV y celulares.
+                Programación, deportes en vivo, películas y series para toda la familia. Configuración para TV Box, Smart TV y celulares.
             </p>
             <ul class="text-slate-400 text-sm max-w-md mx-auto space-y-2 mb-8 text-left">
                 <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Canales en vivo y deportes en alta calidad</li>
@@ -183,7 +182,7 @@
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <h3 class="text-white font-bold text-lg mb-2">ONE PLAYER</h3>
-                <p class="text-xs">Tecnología a tu alcance. Reparaciones, accesorios y entretenimiento garantizado para tu hogar.</p>
+                <p class="text-xs">Reparaciones, accesorios y entretenimiento garantizado para tu hogar.</p>
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-2">Contacto & Atención</h4>
